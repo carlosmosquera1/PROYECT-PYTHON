@@ -1,9 +1,15 @@
 open_list = list() # Crea una lista vacía.
+
 list_1=['CAMILA','CATERIN','FAMILIA','CASA',25,'CARRO',21,22,'PAPA','MAMA'] # Crea una lista con varios tipos de datos.
+
 print(type(open_list)) # Imprime el tipo de dato de open_list.
+
 print(type(list_1)) # Imprime el tipo de dato de list_1.
+
 print(list_1[2]) # Imprime el tercer elemento de list_1.
+
 list_1.append('HERMANA')
+
 print(list_1) # Imprime list_1 después de agregar un nuevo elemento.
 
 list=['SOLO',25,'HOLA',86,'SOLA','CASADO',6]

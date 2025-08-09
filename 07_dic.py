@@ -55,9 +55,9 @@ if('carlos' not in my_dic):
     print('No existe la clave "carlos" en el diccionario.')
 else: 
     print('La clave "carlos" existe en el diccionario.')
-print('CARLOS   ' in my_dic)  # Verifica si 'carlos' está en las claves del diccionario my_dic (debería ser True).
+# print('CARLOS   ' in my_dic)  # Verifica si 'carlos' está en las claves del diccionario my_dic (debería ser True).
 print(my_dic)
-my_dic['nombre']='carlos'   # Agrega una nueva clave 'nomvre' con su valor al diccionario my_dic.
+my_dic['nombre']='carlos'   # Agrega una nueva clave 'nombre' con su valor al diccionario my_dic.
 my_dic['nombre']
 print(my_dic)  # Imprime el diccionario my_dic después de agregar la nueva clave.
 
@@ -91,11 +91,27 @@ print(my_new_dic['edad'])  # Imprime el valor   asociado a la clave 'edad' en el
 
 print(my_new_dic['altura'])  # Imprime el valor asociado a la clave 'altura
 '''
+print()
+#my_new_dic = dict.fromkeys(my_dic)
 
-my_new_dic = dict.fromkeys(my_dic)
-
-my_list = ['nombre','apellido','edad','altura']  # Crea una lista con claves.
+# my_list = ['nombre','apellido','edad','altura']  # Crea una lista con claves.
+# print(my_new_dic.values)  # Imprime el nuevo diccionario con claves y un valor por defecto.
+print(list(dict.fromkeys(list(my_new_dic.keys())).values()))
+print()
 print(list(my_new_dic))
 print(tuple(my_new_dic))  # Convierte el diccionario my_new_dic en una tupla.
 print(set(my_new_dic))  # Convierte el diccionario my_new_dic en un conjunto.
-#my_new_dic = dict.fromkeys(my_dic,)
+my_new_dic = dict.fromkeys(my_dic)
+print(my_new_dic)  # Imprime el nuevo diccionario con claves y un valor por defecto.
+print()
+
+my_new_dic = dict.fromkeys(my_dic,'CARLOS')  # Crea un nuevo diccionario con las mismas claves que my_dic y un valor por defecto 'CARLOS'.
+print(my_new_dic)
+
+my_values = my_new_dic.values()
+print(type(my_values)) # Imprime el tipo de dato de my_values, que es un objeto de vista de valores del diccionario.
+
+print(my_new_dic.values())
+print(list(dict.fromkeys(list(my_new_dic.values()))))
+
+print(list(my_new_dic.values()))  # Convierte los valores del diccionario my_new_dic en una lista.

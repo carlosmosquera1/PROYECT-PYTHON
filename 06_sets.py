@@ -23,18 +23,22 @@ print('CARLOS' in my_other_set)  # Verifica si 'CARLOS' está en my_other_set (d
 my_other_set.remove('PUCHU')  # Elimina 'PUCHU' del conjunto my_other_set.
 print(my_other_set)  # Imprime my_other_set después de eliminar 'PUCHU.
 
-my_other_set.clear()
+my_other_set.clear() # Limpia todos los elementos del conjunto my_other_set.
+
 print(len(my_other_set))  # Imprime my_other_set después de limpiar todos sus elementos.
 
 del my_other_set  # Elimina el conjunto my_other_set.
 # print(my_other_set)  # Intenta imprimir my_other_set después de eliminarlo (esto generará un error).
-
+print()
 my_set = {'CARLOS',25,'MARIO','MOSQUERA'}  # Crea un conjunto con números.
 my_list= list(my_set)  # Convierte el conjunto my_set en una lista.
 print(my_list)  # Imprime la lista resultante de la conversión.
 print(my_list[0])
 
 my_other_set = {'JAVA','ASSEMBLER','SQL','PYTHOM'}
-my_new_set = my_set.union(my_other_set)# Une my_set y my_other_set en un nuevo conjunto.D
-print(my_new_set.union(my_new_set).union(my_set).union('JAVASCRIPT','DJANGO'))  # Imprime el nuevo conjunto resultante de la unión.
+
+my_new_set = my_set.union(my_other_set)  # Une my_set y my_other_set en un nuevo conjunto.D
+
+#print(my_new_set.union(my_new_set).union(my_set).union('JAVASCRIPT','DJANGO'))  # Imprime el nuevo conjunto resultante de la unión.
+
 print(my_new_set)  # Imprime el nuevo conjunto resultante de la unión.
